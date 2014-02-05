@@ -123,10 +123,11 @@ namespace MvcAsyncTests
         {
             return base.Content(
                 @"<h1>Links</h1>
-                 <a href='/sample.pdf'>static sample.pdf</a><br/>
-                 <a href='/api/pdfservice'>ServiceStack Service returning static sample.pdf</a><br/>
-                 <a href='/Pdf/'>MVC Async static file</a><br/>
-                 <a href='/Pdf/AsyncRequest'>MVC Controller async calling ServiceStack Service</a><br/>");
+                 <a href='/sample.pdf'>Static pdf served by MVC</a><br/>
+                 <a href='/api/sample.pdf'>Static pdf served by ServiceStack</a><br/>
+                 <a href='/api/pdfservice'>ServiceStack Service returning a static PDF</a><br/>
+                 <a href='/Pdf/'>MVC Controller async calling ServiceStack returning a static pdf</a><br/>
+                 <a href='/Pdf/AsyncRequest'>MVC Controller async calling a ServiceStack Service returning a static pdf</a><br/>");
         }
     }
 
